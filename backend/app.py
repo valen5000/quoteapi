@@ -1,4 +1,3 @@
-
 from flask import Flask, jsonify
 import random
 
@@ -14,6 +13,10 @@ quotes = [
     "To infinity and beyond!",
     "I'm the king of the world!"
 ]
+
+@app.route("/")
+def home():
+    return "Flask app! Project done by Arinze Chinelo Jennifer
 
 @app.route("/api/quote")
 def get_quote():
